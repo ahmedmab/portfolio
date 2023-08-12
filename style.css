@@ -60,16 +60,20 @@ nav.sticky {
 nav .customNavbar {
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin: auto;
+  position: relative;
 }
 
-/* nav .customNavbar .logo a {
-  font-weight: 500;
-  font-size: 28px;
-  color: var(--navbar-bg-color);
-} */
+nav .customNavbar .menu {
+  margin: 0 auto;
+}
+
+nav .customNavbar .menu form {
+  position: absolute;
+  right: 0;
+}
 
 nav .customNavbar .logo img {
   width: 45px;
@@ -91,7 +95,6 @@ nav.sticky .customNavbar .logo a {
 
 nav .customNavbar .menu {
   display: flex;
-  position: relative;
 }
 
 nav .customNavbar .menu li {

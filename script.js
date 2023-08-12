@@ -11,6 +11,38 @@ let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-button a");
 let lang = document.querySelector("#lang").value;
 
+//home
+const menuEl = document.querySelectorAll('.menu>li');
+const bioEl = document.querySelectorAll('.bio>div');
+const menuContainer = document.querySelector('.menu');
+const langEl = document.querySelector('.menu>form');
+//about
+const aboutTitle = document.querySelector('.about>.content>.title>span');
+const aboutTopic = document.querySelector('.about .topic');
+const aboutContent = document.querySelector('.about p');
+const aboutDowload = document.querySelector('.about a');
+//skills
+const skillTitle = document.querySelector('.skills>.content>.title>span');
+const skillTopic = document.querySelector('.skills .topic');
+const skillContent = document.querySelector('.skills p');
+const skillExp = document.querySelector('.skills .exp');
+//services
+const servicesTitle = document.querySelector('.services>.content>.title>span');
+const servicesTopic1 = document.querySelector('.topic1 .topic');
+const servicesContent1 = document.querySelector('.topic1 p');
+const servicesTopic2 = document.querySelector('.topic2 .topic');
+const servicesContent2 = document.querySelector('.topic2 p');
+const servicesTopic3 = document.querySelector('.topic3 .topic');
+const servicesContent3 = document.querySelector('.topic3 p');
+//projets
+const productsTitle = document.querySelector('.projets>.content>.title>span');
+const product1 = document.querySelector('.product1 p');
+const product2 = document.querySelector('.product2 p');
+//about
+const contactTitle = document.querySelector('.contact>.content>.title>span');
+const contactTopic = document.querySelector('.contact .topic');
+const contactContent = document.querySelector('.contact p');
+
 //Functions
 const cancel = () => {
   navBar.classList.remove("active");
@@ -38,18 +70,6 @@ window.onscroll = function () {
 
 }
 
-// Lang on onresize page 
-window.onresize = function () {
-  if (document.body.clientWidth > 750) {
-    if (menuContainer.contains(langEl)) {
-      menuContainer.removeChild(langEl)
-    }
-    navBar.appendChild(langEl)
-  } else {
-    menuContainer.appendChild(langEl)
-  }
-
-}
 // Side NavIgation Menu JS Code
 menuBtn.onclick = function () {
   navBar.classList.add("active");
@@ -237,37 +257,5 @@ const data = {
     }
   }
 }
-
-//home
-const menuEl = document.querySelectorAll('.menu>li');
-const bioEl = document.querySelectorAll('.bio>div');
-const menuContainer = document.querySelector('.menu');
-const langEl = document.querySelector('.menu>form');
-//about
-const aboutTitle = document.querySelector('.about>.content>.title>span');
-const aboutTopic = document.querySelector('.about .topic');
-const aboutContent = document.querySelector('.about p');
-const aboutDowload = document.querySelector('.about a');
-//skills
-const skillTitle = document.querySelector('.skills>.content>.title>span');
-const skillTopic = document.querySelector('.skills .topic');
-const skillContent = document.querySelector('.skills p');
-const skillExp = document.querySelector('.skills .exp');
-//services
-const servicesTitle = document.querySelector('.services>.content>.title>span');
-const servicesTopic1 = document.querySelector('.topic1 .topic');
-const servicesContent1 = document.querySelector('.topic1 p');
-const servicesTopic2 = document.querySelector('.topic2 .topic');
-const servicesContent2 = document.querySelector('.topic2 p');
-const servicesTopic3 = document.querySelector('.topic3 .topic');
-const servicesContent3 = document.querySelector('.topic3 p');
-//projets
-const productsTitle = document.querySelector('.projets>.content>.title>span');
-const product1 = document.querySelector('.product1 p');
-const product2 = document.querySelector('.product2 p');
-//about
-const contactTitle = document.querySelector('.contact>.content>.title>span');
-const contactTopic = document.querySelector('.contact .topic');
-const contactContent = document.querySelector('.contact p');
 
 getLang();
