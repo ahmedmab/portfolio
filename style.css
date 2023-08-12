@@ -68,6 +68,7 @@ nav .customNavbar {
 
 nav .customNavbar .menu {
   margin: 0 auto;
+  padding: 0%;
 }
 
 nav .customNavbar .menu form {
@@ -99,7 +100,7 @@ nav .customNavbar .menu {
 
 nav .customNavbar .menu li {
   list-style: none;
-  margin: 0 8px;
+  margin: 0 12px;
 }
 
 .customNavbar .menu a {
@@ -409,76 +410,10 @@ section .button button:hover {
   color: var(--navbar-bg-color);
 }
 
-/* My Skills CSS */
-.skills {
-  background: #F0F8FF;
-}
-
-.skills .content {
-  padding: 40px 0;
-}
-
-.skills .skills-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.skills-details .text {
-  width: 50%;
-}
-
-.skills-details p {
-  color: #0E2431;
-  text-align: justify;
-}
-
-.skills .skills-details .experience {
-  display: flex;
-  align-items: center;
-  margin: 0 10px;
-}
-
-.skills-details .experience .num {
-  color: #0E2431;
-  font-size: 80px;
-}
-
-.skills-details .experience .exp {
-  color: #0E2431;
-  margin-left: 20px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 6px;
-}
-
-.skills-details .boxes {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.skills-details .box {
-  width: calc(100% / 2 - 20px);
-  margin: 20px 0;
-}
-
-.skills-details .boxes .topic {
-  font-size: 20px;
-  color: var(--navbar-bg-color);
-}
-
-.skills-details .boxes .per {
-  font-size: 60px;
-  color: var(--navbar-bg-color);
-}
-
 /* My Services CSS */
 .services .boxes {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   justify-content: center;
   gap: 12px;
 }
@@ -491,41 +426,13 @@ section .button button:hover {
   padding: 30px 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   cursor: default;
-  transition: all 0.4s ease;
-}
+} */
 
-.services .boxes .box:hover {
-  background: var(--navbar-bg-color);
-  color: #fff;
-}
-
-.services .boxes .box .icon {
+.services .boxes .box .icon img {
   height: 50px;
   width: 50px;
-  background: var(--navbar-bg-color);
   border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  font-size: 18px;
-  color: #fff;
   margin: 0 auto 10px auto;
-  transition: all 0.4s ease;
-}
-
-.boxes .box:hover .icon {
-  background-color: #fff;
-  color: var(--navbar-bg-color);
-}
-
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p {
-  color: #0E2431;
-  transition: all 0.4s ease;
-}
-
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p {
-  color: #fff;
 }
 
 /* Contact Me CSS */
@@ -707,23 +614,6 @@ footer .text span a:hover {
     font-size: 20px;
   }
 
-  .skills .skills-details {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .skills-details .text {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-
-  .skills-details .boxes {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
   .services .boxes .box {
     margin: 20px 0;
     width: 100%;
@@ -746,11 +636,6 @@ footer .text span a:hover {
 
   .home .text-three {
     font-size: 16px;
-  }
-
-  .skills-details .boxes .per {
-    font-size: 50px;
-    color: var(--navbar-bg-color);
   }
 
   .projets .d-flex {

@@ -21,15 +21,11 @@ const aboutTitle = document.querySelector('.about>.content>.title>span');
 const aboutTopic = document.querySelector('.about .topic');
 const aboutContent = document.querySelector('.about p');
 const aboutDowload = document.querySelector('.about a');
-//skills
-const skillTitle = document.querySelector('.skills>.content>.title>span');
-const skillTopic = document.querySelector('.skills .topic');
-const skillContent = document.querySelector('.skills p');
-const skillExp = document.querySelector('.skills .exp');
 //services
 const servicesTitle = document.querySelector('.services>.content>.title>span');
 const servicesTopic1 = document.querySelector('.topic1 .topic');
 const servicesContent1 = document.querySelector('.topic1 p');
+
 const servicesTopic2 = document.querySelector('.topic2 .topic');
 const servicesContent2 = document.querySelector('.topic2 p');
 const servicesTopic3 = document.querySelector('.topic3 .topic');
@@ -54,7 +50,6 @@ const cancel = () => {
 
 //dinamically date and years of experience
 experience[0].innerHTML = experienceNumber;
-experience[1].innerHTML = experienceNumber;
 year.innerHTML = actuelYear;
 
 
@@ -113,11 +108,6 @@ const getLang = () => {
   aboutTitle.textContent = data[lang].about.title
   aboutTopic.textContent = data[lang].about.topic
   aboutContent.textContent = data[lang].about.content
-  //SKILLS
-  skillTitle.textContent = data[lang].skills.title
-  skillTopic.textContent = data[lang].skills.topic
-  skillContent.textContent = data[lang].skills.content
-  skillExp.textContent = data[lang].skills.experience
   //services
   servicesTitle.textContent = data[lang].services.title;
   servicesTopic1.textContent = data[lang].services.topic1;
@@ -154,33 +144,14 @@ const data = {
       toolkits such as HTML5 Boilerplate / Bootstrap or any other HTML/CSS framework and implementing JS UI
       frameworks.`,
     },
-    "skills": {
-      "title": "SKILLS",
-      "topic": "Skills Reflects Our Knowledge",
-      "content": `Being able to code to a high standard, Writing AngularJs, SCSS, and HTML.
-      Understanding the importance of good UX, and converting Figma files to UI, pixel perfect
-      Gather as much information beforehand to avoid mistakes
-      Reliability and high level of communication
-      Code consistency, cleanliness and quality
-      Troubleshoot and fix lighthouse issues within the current Angular Project
-      Proven experience implementing front-end JavaScript applications.`,
-      "experience": `Years Of Experience`
-    },
     "services": {
       "title": "SERVICES",
-      "topic1": "Web Applications",
-      "content1": `I create successful responsive websites that are fast, easy to use, and built with best practices. The main
-      area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps with
-      Angular, features,
-      animations, and coding interactive layouts.`,
-      "topic2": "Mobile apps",
-      "content2": `With the right knowledge and skills about the latest technology in mobile app development, with IONIC i
-      create mobile app and solutions for our clients across sectors`,
-      "topic3": "Creation of websites",
-      "content3": `I create successful responsive websites that are fast, easy to use, and built with best practices. The main
-      area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps with
-      Angular, features,
-      animations, and coding interactive layouts.`,
+      "topic1": "Software Development",
+      "content1": `Experienced in both functional and OOP: Python, JavaScript, TypeScript.`,
+      "topic2": "Frontend Dev Angular, NestJS",
+      "content2": `Passionate about UI/UX. Over ${experienceNumber} years of development experience in HTML, CSS, JS, Anglar and NestJS frameworks.`,
+      "topic3": "Ionic Dev Android, iOS",
+      "content3": `Skilled in developing hybrid mobile apps and cross-platform solutions using the Ionic framework.`,
     },
     "projets": {
       "title": "PROJECTS",
@@ -214,31 +185,14 @@ const data = {
       des boîtes à outils telles que HTML5 Boilerplate / Bootstrap ou tout autre framework HTML/CSS et implémentant JS UI
       cadres.`,
     },
-    "skills": {
-      "title": "COMPÉTENCES",
-      "topic": "Les compétences reflètent nos connaissances",
-      "content": `Être capable de coder selon des normes élevées, d'écrire AngularJs, SCSS et HTML.
-      Comprendre l'importance d'une bonne UX et convertir les fichiers Figma en UI, pixel perfect
-      Rassemblez un maximum d'informations en amont pour éviter les erreurs
-      Fiabilité et haut niveau de communication
-      Cohérence, propreté et qualité du code
-      Dépanner et résoudre les problèmes de phare dans le projet Angular actuel
-      Expérience éprouvée dans la mise en œuvre le front-end des applications JavaScript.`,
-      "experience": `Années d'Experience`
-    },
     "services": {
       "title": "SERVICES",
-      "topic1": "Applications web",
-      "content1": `Je crée des sites Web réactifs performants, rapides, faciles à utiliser et construits avec les meilleures pratiques. Le principal
-      mon domaine d'expertise est le développement front-end, HTML, CSS, JS, la création d'applications Web petites et moyennes avec
-      Angular, fonctionnalités, animations et codage de mises en page interactives.`,
-      "topic2": "Applications mobile",
-      "content2": `Avec les bonnes connaissances et compétences sur les dernières technologies en matière de développement d'applications mobiles, avec IONIC nous
-      allons créer des applications et des solutions mobiles pour nos clients dans tous les secteurs`,
-      "topic3": "Création des sites web",
-      "content3": `Je crée des sites Web réactifs performants, rapides, faciles à utiliser et construits avec les meilleures pratiques. Le principal
-      mon domaine d'expertise est le développement front-end, HTML, CSS, JS, la création d'applications Web petites et moyennes avec
-      Angular, fonctionnalités, animations et codage de mises en page interactives.`,
+      "topic1": "Développement de logiciels",
+      "content1": `Expérimenté à la fois en fonctionnel et en OOP : Python, JavaScript, TypeScript.`,
+      "topic2": "Frontend Dev Angular, NestJS",
+      "content2": `Passionné d'UI/UX. Plus de ${experienceNumber} ans d'expérience en développement dans les frameworks HTML, CSS, JS, Angular et NestJS.`,
+      "topic3": "Ionic Dev Android, iOS",
+      "content3": `Compétences dans le développement d'applications mobiles hybrides et de solutions multiplateformes à l'aide du framework Ionic.`,
     },
     "projets": {
       "title": "PROJETS",
