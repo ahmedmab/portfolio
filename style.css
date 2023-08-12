@@ -649,6 +649,10 @@ footer .text span a:hover {
 }
 
 @media (max-width: 750px) {
+  nav .customNavbar .menu form {
+    position: static;
+  }
+
   .lang-select {
     margin-top: 12px;
   }
