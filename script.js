@@ -48,8 +48,7 @@ const cancel = () => {
   scrollBtn.style.pointerEvents = "auto";
 }
 
-//dinamically date and years of experience
-experience[0].innerHTML = experienceNumber;
+//dinamically date
 year.innerHTML = actuelYear;
 
 
@@ -131,23 +130,18 @@ const getLang = () => {
 const data = {
   "en": {
     "title": "Ahmed Mabrouki – Web developer",
-    "menu": ["Home", "About", "Skills", "Services", "Projets", "Contact"],
+    "menu": ["Home", "About", "Services", "Projets", "Contact"],
     "bio": ["Hello,", "I'm AHMED MABROUKI", "FREELANCE WEB DESIGNER AND DEVELOPER"],
     "about": {
       "title": "ABOUT ME",
       "topic": "web Developpement Is My Passion",
-      "content": ` years Experience as front end developer in Angular with Ionic is
-      preferred. Well-versed in fundamental visual and interactive design discipline.
-      Strive to use web standards to build solutions using semantic markup and CSS. Pre-processor CSS systems such
-      as SASS to compile style files is a must.
-      Working Experience in building mobile experiences using responsive design. Developing using front end
-      toolkits such as HTML5 Boilerplate / Bootstrap or any other HTML/CSS framework and implementing JS UI
-      frameworks.`,
+      "content": `  Hi, I'm Ahmed. I’m a developer web from Morocco. I have over ${experienceNumber} years of experience in designing and developping beautiful things on web.
+        When I'm not coding you can probably find me with my family or playing football..`,
     },
     "services": {
       "title": "SERVICES",
       "topic1": "Software Development",
-      "content1": `Experienced in both functional and OOP: Python, JavaScript, TypeScript.`,
+      "content1": `Experienced in both functional and OOP: JavaScript, TypeScript.`,
       "topic2": "Frontend Dev Angular, NestJS",
       "content2": `Passionate about UI/UX. Over ${experienceNumber} years of development experience in HTML, CSS, JS, Anglar and NestJS frameworks.`,
       "topic3": "Ionic Dev Android, iOS",
@@ -172,23 +166,18 @@ const data = {
 
   "fr": {
     "title": "Ahmed Mabrouki – Développeur web",
-    "menu": ["Acceuil", "A propos", "Compétences", "Services", "Projets", "Contact"],
+    "menu": ["Acceuil", "A propos", "Services", "Projets", "Contact"],
     "bio": ["Salut,", "je suis AHMED MABROUKI", "CONCEPTEUR ET DÉVELOPPEUR WEB FREELANCE"],
     "about": {
-      "title": "À PROPOS DE MOI",
+      "title": "À PROPOS",
       "topic": "Le développement web est ma passion",
-      "content": ` ans d'expérience en tant que développeur front-end dans Angular avec Ionic est
-      préféré. Bien versé dans la discipline fondamentale du design visuel et interactif.
-      S'efforcer d'utiliser les normes Web pour créer des solutions utilisant le balisage sémantique et CSS. Systèmes CSS pré-processeur tels
-      comme SASS pour compiler les fichiers de style est un must.
-      Expérience de travail dans la création d'expériences mobiles à l'aide d'un design réactif. Développer avec le front-end
-      des boîtes à outils telles que HTML5 Boilerplate / Bootstrap ou tout autre framework HTML/CSS et implémentant JS UI
-      cadres.`,
+      "content": `  Salut, je suis Ahmed. Je suis un développeur web du Maroc. J'ai plus de ${experienceNumber} ans d'expérience dans la conception et le développement de belles choses sur le web.
+        Quand je ne code pas, vous pouvez probablement me trouver avec ma famille ou en train de jouer au football..`,
     },
     "services": {
       "title": "SERVICES",
       "topic1": "Développement de logiciels",
-      "content1": `Expérimenté à la fois en fonctionnel et en OOP : Python, JavaScript, TypeScript.`,
+      "content1": `Expérimenté à la fois en fonctionnel et en OOP : JavaScript, TypeScript.`,
       "topic2": "Frontend Dev Angular, NestJS",
       "content2": `Passionné d'UI/UX. Plus de ${experienceNumber} ans d'expérience en développement dans les frameworks HTML, CSS, JS, Angular et NestJS.`,
       "topic3": "Ionic Dev Android, iOS",

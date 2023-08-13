@@ -355,23 +355,20 @@ section .title span::after {
   transform: translateX(-50%);
 }
 
-.about .about-details .left {
-  width: 45%;
-}
-
 .about .left {
-  height: 500px;
-  width: 400px;
+  height: 400px;
+  width: 300px;
+  max-width: 40%;
 }
 
 .about .left img {
-  max-width: 100%;
-  height: 100%;
+  max-width: 260px;
+  max-height: 100%;
   object-fit: contain;
 }
 
 .about-details .right {
-  width: 55%;
+  width: 60%;
 }
 
 section .topic {
